@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "Ctrl+Apply",
+  "version": "0.1.0",
+  "description": "Job application form filling assistant",
+  "permissions": [
+    "sidePanel",
+    "activeTab",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel/index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://boards.greenhouse.io/*",
+        "https://job-boards.greenhouse.io/*",
+        "https://*.myworkdayjobs.com/*",
+        "https://*.myworkdaysite.com/*",
+        "https://jobs.lever.co/*",
+        "https://*.lever.co/*",
+        "https://*.icims.com/*",
+        "https://*.smartrecruiters.com/*",
+        "https://*.ashbyhq.com/*",
+        "https://*.bamboohr.com/*",
+        "https://*.jobvite.com/*",
+        "https://*.taleo.net/*",
+        "https://*.breezy.hr/*",
+        "https://*.recruitee.com/*"
+      ],
+      "js": [
+        "content/detector.js",
+        "content/extractor.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Ctrl+Apply"
+  },
+  "icons": {}
+}

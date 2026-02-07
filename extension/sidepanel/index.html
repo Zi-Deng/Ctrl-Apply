@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ctrl+Apply</title>
+  <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+  <header>
+    <h1>Ctrl+Apply</h1>
+    <div id="status-bar">
+      <span id="backend-status" class="status-dot disconnected" title="Backend"></span>
+      <span id="cdp-status" class="status-dot disconnected" title="Chrome CDP"></span>
+      <span id="status-text">Connecting...</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- Action buttons -->
+    <section id="actions">
+      <button id="btn-extract" class="btn btn-primary" disabled>
+        Analyze Form
+      </button>
+      <button id="btn-fill" class="btn btn-success" disabled>
+        Fill Form
+      </button>
+      <button id="btn-reconnect" class="btn btn-secondary">
+        Reconnect
+      </button>
+    </section>
+
+    <!-- Status/progress messages -->
+    <section id="messages">
+      <div id="message-area"></div>
+    </section>
+
+    <!-- Platform detection -->
+    <section id="platform-info" class="hidden">
+      <span class="label">Platform:</span>
+      <span id="platform-name">—</span>
+    </section>
+
+    <!-- Field mappings -->
+    <section id="field-mappings" class="hidden">
+      <h2>Field Mappings</h2>
+      <div id="fields-list"></div>
+      <div id="unmapped-section" class="hidden">
+        <h3>Unmapped Fields</h3>
+        <ul id="unmapped-list"></ul>
+      </div>
+    </section>
+
+    <!-- Repeatable sections info -->
+    <section id="repeatable-sections" class="hidden">
+      <h2>Repeatable Sections</h2>
+      <div id="sections-list"></div>
+    </section>
+
+    <!-- Fill results -->
+    <section id="fill-results" class="hidden">
+      <h2>Fill Results</h2>
+      <div id="results-summary"></div>
+      <ul id="results-errors"></ul>
+    </section>
+  </main>
+
+  <script src="panel.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+# Ctrl+Apply — User Profile
+# Copy this file to profile.yaml and fill in your information.
+# Fields marked (required) must be filled. Others are optional.
+
+personal_info:
+  first_name: "Zi"          # (required)
+  last_name: "Deng"           # (required)
+  email: "dengzikang@gmail.com"               # (required)
+  phone: "+19254083088"               # e.g. "+1-555-123-4567"
+  address:
+    street: "9959 Maya Linda Road Unit 27"
+    city: "San Diego"
+    state: "CA"             # e.g. "CA" or "California"
+    zip: "92126"
+    country: "United States"
+  linkedin_url: "https://www.linkedin.com/in/zi-deng-15483a149/"        # e.g. "https://linkedin.com/in/yourname"
+  github_url: "https://github.com/zkdeng-uofa"          # e.g. "https://github.com/yourname"
+  github_url: "https://github.com/Zi-Deng"          # e.g. "https://github.com/yourname"
+  portfolio_url: ""
+
+education:
+  - degree: "Doctorate of Philosophy"            # e.g. "Master of Science", "Bachelor of Arts"
+    field: "Electrical Engineering"             # e.g. "Computer Science", "Machine Learning"
+    institution: "University of Arizona"       # e.g. "Stanford University"
+    gpa: "3.75"               # e.g. "3.9/4.0"
+    start_date: "2021-08"        # e.g. "2022-09"
+    end_date: "2026-12"          # e.g. "2024-06" or "Present"
+    description: ""       # coursework, thesis, honors
+
+education:
+  - degree: "Master of Science"            # e.g. "Master of Science", "Bachelor of Arts"
+    field: "Electrical Engineering"             # e.g. "Computer Science", "Machine Learning"
+    institution: "University of California, San Diego"       # e.g. "Stanford University"
+    gpa: "3.4"               # e.g. "3.9/4.0"
+    start_date: "2019-09"        # e.g. "2022-09"
+    end_date: "2021-6"          # e.g. "2024-06" or "Present"
+    description: ""       # coursework, thesis, honors
+
+education:
+  - degree: "Bachelor of Science"            # e.g. "Master of Science", "Bachelor of Arts"
+    field: "Electrical Engineering"             # e.g. "Computer Science", "Machine Learning"
+    institution: "University of California, San Diego"       # e.g. "Stanford University"
+    gpa: "3.43"               # e.g. "3.9/4.0"
+    start_date: "2015-09"        # e.g. "2022-09"
+    end_date: "2019-06"          # e.g. "2024-06" or "Present"
+    description: ""       # coursework, thesis, honors
+
+experience:
+  - title: "Graduate Consultant"
+    company: "Arizona Institute for AI and Society, UofA"
+    location: "Tucson, AZ"
+    start_date: "2025-08"
+    end_date: "Present"
+    description: |
+      • Worked as an AI/ML consultant for the Innovation Pilot program for University of Arizona's AI Institute. Graduate students, faculty, and staff apply to the program to receive machine learning consultation, expertise and resources for their specific projects. Additionally aided in the planning of methods in which AI could be integrated into the University of Arizona campus at large.
+
+  - title: "Graduate Researcher"
+    company: "Signal and Image Laboratory, UofA"
+    location: "Tucson, AZ"
+    start_date: "2022-01"
+    end_date: "Present"
+    description: |
+      • Designed a deep learning framework for cost-sensitive image classification that implements configurable N×N cost matrices to optimize for asymmetric misclassification costs in safety-critical domains such as medical imaging (breast cancer detection) and dangerous species identification. The framework introduces a novel loss function utilizing dynamic alpha-scaled regularization, and logit adjustment and can be integrated into existing vision architectures such as ViT, ResNet and ConvNeXt with ease.
+      • Developed FLOW-DC, a distributed downloader with policy-aware congestion control tailored for large-scale acquisition of machine learning datasets under the guidance of Dr. Nirav Merchant. It leverages TaskVine with a BBR inspired state machine to allow users to utilize a heterogeneous resource pool for machine learning dataset acquisition and processing. It is designed to be an improvement upon existing distributed downloaders such as img2dataset.
+      • Created a set of machine learning models to support applications related to species classification: (1) AraNet, which utilizes a two-stage ConvNeXtV2 design, combining intermediate fine-tuning and downstream distillation to perform species identification, and (2) OspideR, an ensemble OOD detector for new species detection that constructs a Mahalanobis distance based score for each in-distribution class and takes the minimum of that pool to construct an output anomaly score.
+
+  - title: "Graduate Researcher"
+    company: "Data Science Institute, UofA"
+    location: "Tucson, AZ"
+    start_date: "2022-01"
+    end_date: "2025-12"
+    description: |
+      • Collaborated with AI Institute for Resilient Agriculture (AIIRA) as part of a cross-institutional team to create the following deep vision models: (1) InsectNet, which utilizes SSL pre-training with a RegNetY32 architecture for insect and pest classification, and (2) WeedNet, which utilizes Masked Autoencoder ViT architecture for weed species classification.
+      • Worked with Dr. Arti Singh and Dr. Baskar Ganapathysubramanian to construct BioTrove, an open-access benchmark dataset for machine learning/artificial intelligence applications in biodiversity (161.9 million images), and TerraIncognita, a dynamic benchmark dataset to support OOD detection for species discovery.
+
+  - title: "Graduate Researcher"
+    company: "Adaptive Computing and Embedded Systems Lab, UCSD"
+    location: "San Diego, CA"
+    start_date: "2020-06"
+    end_date: "2021-06"
+    description: |
+      • Evaluated the secure computation library emp-toolkit for multi-party garbled circuit (GC) in both malicious and semi-honest settings using C. Then, performed investigation into adapting the emp-toolkit's multi-party GC to allow segmented computation of memory-intensive modules.
+      • Worked with Dr. Karla Esquerre to examine and test different machine learning models for water end-use classification for low-income households, settling on Random Forest.
+
+  - title: "Data Science and Machine Learning Intern"
+    company: "Viasat"
+    location: "Carlsbad, CA"
+    start_date: "2019-06"
+    end_date: "2019-09"
+    description: |
+      • Utilized unsupervised learning techniques to investigate resource optimization possibilities for the ViaSat-2 satellite network to achieve maximum internet availability. This culminated in the development of a DiANA clustering analysis pipeline on ViaSat-2 historical data using tidyverse philosophy in R.
+
+  - title: "Programmer"
+    company: "Air Sea Interaction Lab, UCSD"
+    location: "San Diego, CA"
+    start_date: "2017-01"
+    end_date: "2019-06"
+    description: |
+      • Part of the Waveglide team, which worked on full-stack development in Python for a Wave Glider, an unmanned research vehicle designed for ocean wave analysis. Further developed a MATLAB script to apply phase unwrapping algorithms to ocean velocity data from an acoustic doppler current profiler (ADCP) attached to the vehicle.
+
+  - title: "Software Engineering Intern"
+    company: "Viasat"
+    location: "Carlsbad, CA"
+    start_date: "2018-06"
+    end_date: "2018-09"
+    description: |
+      • Developed a tool to automatically generate configuration files for hardware components of the ViaSat-2 SurfBeam2 satellite network. Additionally, created a Flask web application for visualization of satellite beam information, which allowed for simplified information sharing between internal groups.
+
+  - title: "Engineering Intern"
+    company: "Bbot Robotics"
+    location: "San Mateo, CA"
+    start_date: "2017-06"
+    end_date: "2017-09"
+    description: |
+      • Worked on the development of Bbot, a robotic drink delivery system that operates along a track on the ceiling. Utilized a Raspberry Pi to communicate with a BQ76920 battery balancer chip to control a PIC microcontroller to control a prototype charging circuit for the robot's battery using embedded programming in Python and C.
+
+projects:
+  - name: ""
+    description: ""
+    url: ""
+    technologies: []      # e.g. ["Python", "PyTorch", "React"]
+
+skills:
+  technical: ["Python", "C++", "R", "SQL", "Bash", "MATLAB", "NumPy", "Pandas", "OpenCV", "Matplotlib", "Computer Vision", "VLMs", "OOD Detection", "Transfer Learning", "SSL", "Distributed Computing"]
+  frameworks: ["PyTorch", "scikit-learn", "Hugging Face", "Kaggle"]
+  tools: ["AWS", "Git", "Docker", "Linux"]
+
+languages:
+  - language: "English"
+    proficiency: "Native"
+
+demographics:
+  gender: "Male"              # leave blank to skip, or e.g. "Male", "Female", "Non-binary", "Prefer not to say"
+  ethnicity: "Asian"           # leave blank to skip
+  veteran_status: "No"      # e.g. "I am not a veteran"
+  disability_status: "No"   # e.g. "I don't have a disability"
+
+work_authorization:
+  us_authorized: true
+  requires_sponsorship: false
+  visa_status: ""         # e.g. "F-1 OPT", "H-1B", "US Citizen"
+
+preferences:
+  willing_to_relocate: true
+  remote_preference: "On-site"   # e.g. "Remote", "Hybrid", "On-site"
+  start_date: "2026-05"          # e.g. "Immediately", "2026-06"
+
+common_answers:
+  hear_about_us: "LinkedIn"
+  cover_letter_template: ""
+  extra: {}

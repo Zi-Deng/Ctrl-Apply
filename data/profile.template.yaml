@@ -1,0 +1,83 @@
+# Ctrl+Apply — User Profile
+# Copy this file to profile.yaml and fill in your information.
+# Fields marked (required) must be filled. Others are optional.
+
+personal_info:
+  first_name: ""          # (required)
+  last_name: ""           # (required)
+  email: ""               # (required)
+  phone: ""               # e.g. "+1-555-123-4567"
+  address:
+    street: ""
+    city: ""
+    state: ""             # e.g. "CA" or "California"
+    zip: ""
+    country: "United States"
+  linkedin_url: ""        # e.g. "https://linkedin.com/in/yourname"
+  github_url: ""          # e.g. "https://github.com/yourname"
+  portfolio_url: ""
+
+education:
+  - degree: ""            # e.g. "Master of Science", "Bachelor of Arts"
+    field: ""             # e.g. "Computer Science", "Machine Learning"
+    institution: ""       # e.g. "Stanford University"
+    gpa: ""               # e.g. "3.9/4.0"
+    start_date: ""        # e.g. "2022-09"
+    end_date: ""          # e.g. "2024-06" or "Present"
+    description: ""       # coursework, thesis, honors
+
+experience:
+  - title: ""             # e.g. "Software Engineer Intern"
+    company: ""
+    location: ""          # e.g. "San Francisco, CA"
+    start_date: ""
+    end_date: ""
+    description: ""       # bullet points of what you did
+
+projects:
+  - name: ""
+    description: ""
+    url: ""
+    technologies: []      # e.g. ["Python", "PyTorch", "React"]
+
+skills:
+  technical: []           # e.g. ["Python", "C++", "SQL"]
+  frameworks: []          # e.g. ["PyTorch", "TensorFlow", "React"]
+  tools: []               # e.g. ["Git", "Docker", "AWS"]
+
+publications: []
+# - title: ""
+#   venue: ""             # e.g. "NeurIPS 2025"
+#   year: ""
+#   url: ""
+
+languages:
+  - language: "English"
+    proficiency: "Native"
+
+certifications: []
+# - "AWS Solutions Architect"
+
+demographics:
+  gender: ""              # leave blank to skip, or e.g. "Male", "Female", "Non-binary", "Prefer not to say"
+  ethnicity: ""           # leave blank to skip
+  veteran_status: ""      # e.g. "I am not a veteran"
+  disability_status: ""   # e.g. "I don't have a disability"
+
+work_authorization:
+  us_authorized: true
+  requires_sponsorship: false
+  visa_status: ""         # e.g. "F-1 OPT", "H-1B", "US Citizen"
+
+preferences:
+  willing_to_relocate: true
+  remote_preference: ""   # e.g. "Remote", "Hybrid", "On-site"
+  start_date: ""          # e.g. "Immediately", "2026-06"
+
+common_answers:
+  hear_about_us: "Online job board"
+  cover_letter_template: ""
+  extra: {}
+  # Add any common custom Q&A pairs here:
+  # salary_expectation: "Negotiable"
+  # years_of_experience: "3"
